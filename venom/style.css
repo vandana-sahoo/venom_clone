@@ -1,0 +1,638 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-wrap: anywhere; */
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.main {
+  width: 100%;
+  background-color: #0a0a0a;
+}
+
+nav {
+  height: 11vh;
+  width: 100%;
+  background-color: rgba(105, 103, 103, 0);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 70px;
+  position: sticky;
+  top: 0;
+}
+
+nav .logo {
+  height: 90%;
+  width: 20%;
+  background-image: url("https://venom.foundation/_nuxt/Logo.8cbf5be7.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+nav .logo:hover {
+  background-image: url("https://venom.foundation/_nuxt/LogoHover.bd77be5b.svg"); /* Change to the hover logo image */
+}
+
+nav .navItems a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav .navItems a:hover {
+  color: rgb(0, 88, 0); /* Hover effect for nav links */
+}
+nav .navItems {
+  height: 90%;
+  width: 27%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 19px;
+}
+nav .navItems li {
+  list-style: none;
+  font-size: 16px;
+  /* margin: 0 20px; */
+}
+
+nav .contact {
+  height: 90%;
+  width: 24%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  padding: 10px;
+}
+nav .navItems li:hover {
+  color: #76a376;
+}
+nav .contact li i {
+  font-size: 19px;
+  padding: 18px 10px;
+  border-radius: 20%;
+}
+nav .contact li i:hover {
+  background-color: rgb(59, 58, 58);
+}
+
+.container1 {
+  display: flex;
+  background-color: #0d0e0d;
+  justify-content: space-between;
+  width: 100%;
+  height: 70vh;
+  background-image: url("./assets/header-big.caf69b04.webp");
+  background-repeat: no-repeat;
+  background-position-x: 350px;
+}
+.container1 .left {
+  width: 70%;
+  height: 100%;
+  /* gap: 100px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.left {
+  margin-left: 50px;
+}
+
+.container1 .left h1 {
+  color: #6e6e6d;
+  font-weight: 400;
+  font-size: 70px;
+  margin: 0; /* Remove default margin to avoid extra space */
+  line-height: 1.2; /* Adjust line height for spacing */
+}
+
+.container1 .left h1 span {
+  color: rgba(246, 245, 244, 0.94);
+}
+
+.container1 .left .button {
+  display: flex;
+  gap: 10px;
+  width: 450px;
+  margin-right: 20%;
+}
+
+.container1 .left .button button {
+  background-color: #0d0e0d;
+  width: 200px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  height: 64px;
+  border-radius: 12px;
+  gap: 18px;
+  cursor: pointer;
+  margin-top: 50px;
+  border: none; /* Ensure no border by default */
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.container1 .left .button button:first-child {
+  background-color: #11a97d;
+  color: white;
+}
+
+/* Hover effect for "Explore Ecosystem" button (first child) */
+.container1 .left .button button:first-child:hover {
+  background-color: rgb(67, 206, 162); /* Lighter green on hover */
+}
+
+/* Hover effect for "Start Building" button (second child) */
+.container1 .left .button button:nth-child(2) {
+  background-color: rgb(13, 14, 13);
+  color: white;
+  border: 2px solid rgb(58, 58, 58); /* No visible border initially */
+}
+
+.container1 .left .button button:nth-child(2):hover {
+  border: 2px solid rgb(17, 169, 125); /* Green border on hover */
+}
+
+.container1 .right {
+  height: 469px;
+  right: -177px;
+  top: -59x;
+  /* z-index: 1; */
+  /* background-image: url("https://venom.foundation/_nuxt/header-big.caf69b04.webp"); */
+}
+
+.container1 .right img {
+  width: 100%;
+  height: 100%;
+}
+
+.container2 {
+  width: 100%;
+  height: 65vh;
+  background-color: #0d0e0d;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 20px; */
+  color: white;
+}
+.container2 ul {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-top: 40px;
+  flex-direction: row;
+  background-color: rgb(13, 14, 13);
+  gap: 5px;
+}
+
+.container2 ul li {
+  background-color: rgba(188, 172, 172, 0.077);
+  height: 10vh;
+  width: 280px;
+  margin-left: 8px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 5px 10px;
+  gap: 10px;
+}
+
+.container3 .last-li {
+  height: 20vh;
+  /* padding: 10px; */
+}
+
+.container3 li .new {
+  width: 56px;
+  height: 25px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #053eb4;
+  border-radius: 8px;
+}
+
+.container4 {
+  display: flex;
+  justify-content: center;
+}
+
+.inner-container {
+  width: 88%;
+  height: 55vh;
+  background: rgb(30, 108, 102);
+  background: linear-gradient(
+    90deg,
+    rgb(55, 110, 106) 0%,
+    #2fa86c 0%,
+    #43518f 100%
+  );
+
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: space-between; */
+}
+
+.inner-container .left-container {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 20px;
+}
+.inner-container .left-container h1 {
+  padding-bottom: 20px;
+  font-size: 32px;
+  /* padding-top: 10px; */
+}
+
+.left-container p {
+  font-size: 18px;
+}
+
+.container4 .inner-container .left-container h2 i {
+  padding-left: 8px;
+}
+
+.inner-container .P-right-container .right-container {
+  width: 100%;
+  height: 90%;
+  background-image: url("https://venom.foundation/_nuxt/1024.55326121.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.P-right-container {
+  width: 18%;
+  height: 220%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  margin-right: 20px;
+  /* overflow: hidden; */
+}
+.container4 .inner-container .left-container h2 {
+  padding-top: 10px;
+  color: #0febad;
+  font-size: 18px;
+}
+
+.container4 .inner-container .left-container .container4ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; /* Prevent wrapping to multiple rows */
+  justify-content: flex-start; /* Align items to the left */
+  list-style: none;
+  /* padding: 0; */
+  padding-top: 30px;
+  margin: 0;
+  gap: 10px; /* Reduced gap between items */
+}
+
+.container4 .inner-container .left-container .container4ul li {
+  border: 1px solid white;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 200px;
+  height: 9vh;
+}
+
+.text {
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center; /* Center-align the text inside each item */
+}
+
+.text span {
+  font-size: 20px;
+}
+
+.para1 {
+  width: 100%;
+  height: 50vh;
+  color: white;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.para1 .hed1 {
+  font-size: 30px;
+}
+
+.para1 .pr1 {
+  font-size: 20px;
+  width: 70%;
+  padding-top: 30px;
+}
+
+.pr1-pr p {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.container5 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+}
+.container5 .container5-inner {
+  color: white;
+  width: 39%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(23, 23, 23);
+  border-radius: 12px;
+}
+.container5 .container5-inner .build {
+  display: flex;
+  width: 43%;
+  justify-content: space-evenly;
+  padding-top: 15px;
+  font-size: 28px;
+}
+.container5 .container5-inner .container5-para {
+  font-size: 16px;
+  width: 85%;
+  padding-left: 30px;
+}
+.container5 .container5-inner .bttn button {
+  font-size: 18px;
+  color: white;
+  background-color: #11a97d;
+  height: 50px;
+  width: 27%;
+  margin-left: 10px;
+  border-radius: 12px;
+  border: none;
+}
+.container5 .container5-inner .bttn {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* .pr{
+padding-left: 8px;
+} */
+
+.partition {
+  width: 100%;
+  height: 8vh;
+}
+
+.last {
+  width: 100%;
+  height: 50vh;
+}
+.container6 {
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tvm {
+  width: 80%;
+  height: 60vh;
+  color: white;
+  display: flex;
+  border-radius: 12px;
+  justify-content: space-between;
+  background-color: rgb(23, 23, 23);
+  margin-top: 100px;
+}
+.tvm .tvm-left ul {
+  list-style: none;
+  width: 20%;
+  height: 100%;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 10px;
+}
+.tvm .tvm-right {
+  width: 70%;
+  font-size: 12px;
+  text-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+}
+.tvm .tvm-right ul {
+  list-style: none;
+}
+.tvm .tvm-right ul li {
+  padding-top: 20px;
+}
+.tvm .tvm-right ul li p {
+  font-size: 18px;
+}
+.tvm-middle {
+  width: 2px;
+  height: 90%;
+  border: 1px solid;
+  margin-top: 20px;
+}
+
+/* Container to hold the buttons */
+.cute-but-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center the buttons horizontally */
+  flex-wrap: wrap; /* Wrap the buttons to a new line if the screen is too small */
+  gap: 15px; /* Add spacing between the buttons */
+  margin-top: 20px; /* Add some space above the button container */
+}
+
+/* Button styling */
+.cute-but-container button{
+  padding: 10px 25px; /* Add padding for spacing inside the buttons */
+  font-size: 16px; /* Font size */
+  font-weight: 600; /* Bold font */
+  color: white; /* White text color */
+  background-color: transparent; /* Transparent background */
+  border: 2px solid white; /* White border */
+  border-radius: 50px; /* Rounded edges */
+  cursor: pointer; /* Pointer cursor for buttons */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+#box {
+  /* margin-top: 400px; */
+  display: flex;
+  justify-content: space-between; /* Distribute boxes evenly */
+  gap: 20px; /* Space between the boxes */
+  max-width: 1300px; /* Width to hold all three boxes in a row */
+  margin: 0 auto; /* Center the boxes container */
+}
+
+/* Styling for individual boxes */
+.box1, .box2, .box3 {
+  background-color: black; /* Black background */
+  color: white; /* White text */
+  width: 400px; /* Width of each box */
+  height: 130px; /* Height of each box */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better effect */
+  /* margin-top: 300px; */
+}
+
+.box1 h1, .box2 h1, .box3 h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.box1 p, .box2 p, .box3 p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* .cute-btn2 {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+.cont {
+  background-color: #0a0a0a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 88%;
+  height: 100px;
+  background: rgb(30, 108, 102);
+  border-radius: 18px;
+  margin: 0 auto; /* Center the div horizontally */
+}
+
+.cont h1 {
+  padding: 0 20px;
+  width: 40%;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: black; /* Set font color to black */
+}
+
+.cont ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cont li {
+  color: black; /* Set icon color to black */
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px; /* Decrease space between icons */
+}
+
+.cont li:last-child {
+  margin-right: 0; /* Remove margin for the last item */
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  width: 100%;
+  height: 30vh;
+  background-color: #0e1011;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footleft {
+  width: 20%;
+  height: 100%;
+}
+
+footer .footleft .log {
+  height: 100%;
+  width: 100%;
+}
+.footright ol {
+  list-style: none;
+  padding-top: 30px;
+  font-size: 25px;
+}
+.footright ol li:first-child {
+  font-size: 40px;
+}
+
+.footright ol:last-child {
+  padding-right: 40px;
+}
+
+.log-left {
+  height: 90%;
+  width: 70%;
+
+  background-image: url("https://venom.foundation/_nuxt/LogoHover.bd77be5b.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.footright {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
